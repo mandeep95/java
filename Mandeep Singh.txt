@@ -1,0 +1,144 @@
+/*Write a Simple Java Program with your name as String and age as Int data member and
+hobby as class method. Create a main method which will call the hobby class method and
+print your age and name.*/
+
+
+public class Hobby {
+    public static void main(String args[]) {
+    String name = "mandeep singh";
+    int age =20;
+      {
+         
+         System.out.println("my name is " + name +   " age is" + age);
+     }
+    }
+}
+
+
+/*Q2. Give 2 Examples names according to standard naming conversions for the following:
+
+• Class name
+• Function name
+• Variable
+• Static variable*/
+
+
+
+Class name = Class Deep {}
+
+function name = My Deep()
+
+variable =  int [] time
+
+static variable =. string 
+                            float
+
+
+
+
+
+
+
+
+
+
+
+Q3. 1) Define .java file and .class in java.
+2) Explain if Java is a complete OOP’s Programming language or not.
+3) Give an example of NR - WA(No return - With parameter)
+Ans 3//
+
+1)       .java file is a source code file written in the Java programming language.
+          .class file stream files that are produced when a source file is compiled by the Java compiler.
+         In other words - the .java file contains our Java source code and the .class file contains the Java bytecode produced by the Java compiler. It is your .class files that run to execute a Java application.
+
+2) Java is not fully object-oriented because it supports data types like byte, long, etc., which are not objects. Because in JAVA we use data types like int, float, double, etc which are not object-oriented.
+
+3)
+    public class Testing {
+    public static void main(String args[]) {
+       
+		 Testing obj = new Testing();
+		
+   obj.subtract(10, 20,30);
+   obj.sum(20,74,85);
+    
+       
+    }  
+
+     void sum(int a, int b, int c) {
+		int d = a+b+c;
+		System.out.println("sum = " + d);
+	}
+    
+
+    void subtract(int a, int b, int c) {
+		int d = a-b-c;
+		System.out.println("subtract = " + d);
+	}
+    
+}
+
+
+	Q4.  /*Create class Calci with static member function addy(), subby() and 2 non-static member
+functions diviji() and mull(). with the print statement as you want.
+Create another class CalciWorking with main function and run addy subby with class name
+and other 2 with object of class.*/
+  
+  
+  
+  public class Calci {
+    public static void main(String args[]) {
+       
+		 Calci obj = new Calci();
+		 Calci.addy(10, 20,30);
+		 Calci.subby(10, 20,30);
+        obj.mull(10, 20);
+        obj.diviji(20,14);
+       CalciWorking();
+    
+       
+    }  
+
+     static void addy(int a, int b, int c) {
+		int d = a+b+c;
+		System.out.println("sum = " + d);
+	}
+	
+	static void subby(int a, int b, int c) {
+		int d = a-b-c;
+		System.out.println("subtract = " + d);
+	}
+    
+
+    void mull(int a, int b) {
+		int d = a*b;
+		System.out.println("mull= " + d);
+	}
+	
+	 void diviji(int a, int b) {
+		int d = a/b;
+		System.out.println("diviji = " + d);
+	}
+
+      }
+
+    
+
+//Q5. What are Wrapper classes?. Give an example.
+
+
+// A Wrapper class is a class which contains the primitive data types (int, char,  byte ,short )
+
+
+public class Unboxing {
+   public static void main(String args[]) {
+      Integer obj = new Integer(120); 
+      int num = obj.intValue(); 
+       System.out.println(" Wrapper class " + num );
+      
+      System.out.println( " Convert to primitive " + obj);
+   }
+}
+
+    
